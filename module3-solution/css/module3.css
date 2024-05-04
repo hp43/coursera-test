@@ -1,0 +1,102 @@
+body {
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffffff;
+    font-family: 'Oxygen', sans-serif;
+}
+/* HEADER */
+/* Nav */
+#header-nav {
+    background-color: #cac9c6;
+    border-radius: 0;
+    border: 0;
+}
+.navbar-brand{
+    height: fit-content;
+    padding: 15px;
+}
+.navbar-brand h1 { /* Restaurant name */
+    color: #000000;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #393939;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+   text-decoration: none;
+}
+/* Main content */
+#main-content section .menu_item{
+    background-color: #cac9c6;
+    margin-top:35px;
+    height: 1000px;
+    overflow: hidden;
+}
+#main-content h2{
+    font-weight: bold;
+}
+/* Item content */
+.menu_item .menu_item_title{
+    text-align: center;
+    padding: 10px 0 10px;
+    font-weight: bold;
+}
+.menu_item .menu_item_details{
+    padding: 15px;
+}
+
+/* Media Queries */
+@media (min-width: 768px){
+    #main-content{
+        width: 98%;
+    }
+}
+@media (max-width: 767px) {
+    /* Header */
+    /* Nav */
+    #collapsable-nav{
+        padding:0px;
+        border:1px solid #000000;
+    }
+    .navbar-header button.navbar-toggle{
+        border: 2px solid #000000;
+        padding:7px 3px 7px;
+        margin:15px;
+    }
+    .navbar-header .icon-bar{
+        width: 30px;
+        border: 3px solid #000000;
+        border-radius: 1px;
+    }
+    .navbar-header .icon-bar + .icon-bar{
+        margin-top: 5px;
+    }
+    
+    #nav-list{
+        background-color: #c9c1aa;
+        text-align: center;
+        margin:0px;
+        font-size: 1.25em;
+        color: #000000;
+    }
+    #nav-list>li{
+        border:1px solid #000000;
+    }
+    #nav-list a:hover{
+        background: #6ca5de;
+        color: #ffffff;
+    }
+    
+    #nav-list a{
+        color:black;
+    }
+    /* Main Content */
+    #main-content section div{
+        margin-right:70px;
+        margin-left:70px;
+    }
+    #main-content section .menu_item{
+        height: fit-content;
+        overflow: hidden;
+    }
+}
